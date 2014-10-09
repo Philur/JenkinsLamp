@@ -30,7 +30,7 @@ public class LampConfigReaderTest {
         {
             Lamp lamp = lamps.get(0);
             assertThat(lamp.getName(), is("green"));
-            assertThat(lamp.getDescription(), is("Turn on green lamp when job unit-test is ok!"));
+            assertThat(lamp.getDescription(), is("Turn on green lamp when job unit-test is ok"));
             assertThat(lamp.getOnCommand(), is("\"C:\\\\Program Files (x86)\\\\Telldus\\\\tdtool.exe\" --on 1"));
             assertThat(lamp.getOffCommand(), is("\"C:\\\\Program Files (x86)\\\\Telldus\\\\tdtool.exe\" --off 1"));
             assertThat(lamp.getJobNames().size(), is(1));
