@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jenkinslampsConfig>
-    <jenkinsUrl>http://localhost:6080/api/xml</jenkinsUrl>
+    <jenkinsUrl>http://localhost:6080/api/xml/</jenkinsUrl>
     <pollTimeMsec>10000</pollTimeMsec>
     <turnOn>08:00</turnOn>
     <turnOff>17:00</turnOff>
