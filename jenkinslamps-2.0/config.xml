@@ -1,42 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jenkinslampsConfig>
-    <jenkinsUrl>http://your-ci-server:8080/</jenkinsUrl>
+    <jenkinsUrl>http://localhost:6080/api/xml/</jenkinsUrl>
     <pollTimeMsec>10000</pollTimeMsec>
-    <turnOn>09:00</turnOn>
+    <turnOn>08:00</turnOn>
     <turnOff>17:00</turnOff>
     <activeHolidays>false</activeHolidays>
 
     <lamps>
         <lamp>
-            <name>green</name>
-            <description>Turn on green lamp when job unit-test is ok</description>
+            <name>Breaker 1-1</name>
+            <description>Turn on green LED when unit-test are ok</description>
             <onCommand>"C:\\Program Files (x86)\\Telldus\\tdtool.exe" --on 1</onCommand>
             <offCommand>"C:\\Program Files (x86)\\Telldus\\tdtool.exe" --off 1</offCommand>
             <jobs>
                 <job>unit-test</job>
-            </jobs>
+           </jobs>
             <actions>
                 <whenAllJobsOk>on</whenAllJobsOk>
                 <whenAnyJobFails>off</whenAnyJobFails>
                 <whenAnyJobUndefined>off</whenAnyJobUndefined>
             </actions>
         </lamp>
-
         <lamp>
-            <name>red</name>
-            <description>Turn on red lamp when job unit-test has failed</description>
+            <name>Breaker 1-2</name>
+            <description>Turn on green Lava Lamp when both "CAB 99 - Lava Lamp app for Jenkins" and "TestBankAccount" are ok</description>
             <onCommand>"C:\\Program Files (x86)\\Telldus\\tdtool.exe" --on 2</onCommand>
             <offCommand>"C:\\Program Files (x86)\\Telldus\\tdtool.exe" --off 2</offCommand>
             <jobs>
+                <job>CAB 99 - Lava Lamp app for Jenkins</job>
+                <job>TestBankAccount</job>
+            </jobs>
+            <actions>
+                <whenAllJobsOk>on</whenAllJobsOk>
+                <whenAnyJobFails>off</whenAnyJobFails>
+                <whenAnyJobUndefined>on</whenAnyJobUndefined>
+            </actions>
+        </lamp>
+
+        <lamp>
+            <name>Breaker 1-3</name>
+            <description>Turn on red LED when any of unit-test and integration-test-soapui has failed
+            </description>
+            <onCommand>"C:\\Program Files (x86)\\Telldus\\tdtool.exe" --on 3</onCommand>
+            <offCommand>"C:\\Program Files (x86)\\Telldus\\tdtool.exe" --off 3</offCommand>
+            <jobs>
                 <job>unit-test</job>
+                <job>integration-test-soapui</job>
             </jobs>
             <actions>
                 <whenAllJobsOk>off</whenAllJobsOk>
-                <whenAnyJobUndefined>off</whenAnyJobUndefined>
                 <whenAnyJobFails>on</whenAnyJobFails>
+                <whenAnyJobUndefined>on</whenAnyJobUndefined>
             </actions>
         </lamp>
     </lamps>
-
 </jenkinslampsConfig>
 
