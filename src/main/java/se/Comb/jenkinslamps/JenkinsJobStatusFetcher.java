@@ -1,7 +1,7 @@
 /*
- * Created by KDMA02 2013-09-30 15:33
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 import org.apache.log4j.Logger;
 import org.dom4j.Document;

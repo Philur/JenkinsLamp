@@ -1,7 +1,7 @@
 /*
- * Created by Daniel Marell 2013-01-31 17:06
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 import org.apache.log4j.Logger;
 

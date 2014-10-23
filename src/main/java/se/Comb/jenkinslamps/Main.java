@@ -1,7 +1,7 @@
 /*
- * Created by Daniel Marell 12-12-03 10:22 PM
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,7 +1,7 @@
 /*
- * Created by Daniel Marell 2012-12-04 18:09
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;

@@ -1,7 +1,7 @@
 /*
- * Created by KDMA02 2013-09-24 17:12
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 import org.joda.time.LocalTime;
 

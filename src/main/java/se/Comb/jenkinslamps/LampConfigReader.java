@@ -1,7 +1,7 @@
 /*
- * Created by KDMA02 2013-09-30 13:07
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 import org.jdom.Document;
 import org.jdom.Element;

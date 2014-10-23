@@ -1,7 +1,7 @@
 /*
- * Created by Daniel Marell 12-12-03 11:17 PM
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 import org.apache.log4j.Logger;
 import org.joda.time.LocalTime;
