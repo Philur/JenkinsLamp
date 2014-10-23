@@ -1,7 +1,7 @@
 /*
- * Created by KDMA02 2013-09-30 15:59
+ * Created by u017121
  */
-package se.caglabs.jenkinslamps;
+package se.Comb.jenkinslamps;
 
 public class CommandControllerStub implements LampController {
     private String name;
