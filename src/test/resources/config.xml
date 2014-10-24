@@ -1,6 +1,6 @@
 <xml version="1.0" encoding="UTF-8"?>
 <jenkinslampsConfig>
-    <jenkinsUrl>http://ec2-54-171-84-56.eu-west-1.compute.amazonaws.com/api/xml$
+    <jenkinsUrl>http://ec2-54-171-84-56.eu-west-1.compute.amazonaws.com/api/xml/</jenkinsUrl>
     <pollTimeMsec>10000</pollTimeMsec>
     <turnOn>08:00</turnOn>
     <turnOff>17:00</turnOff>
