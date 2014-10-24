@@ -23,7 +23,7 @@ public class LampConfigReaderTest {
         assertThat(c.getPollTimeMsec(), is(10000));
         assertThat(c.getTurnOnTime(), is(LocalTime.parse("08:00:00")));
         assertThat(c.getTurnOffTime(), is(LocalTime.parse("17:00:00")));
-        assertThat(c.isActiveHolidays(), is(false));
+        assertThat(c.isActiveHolidays(), is(true));
 
         List<Lamp> lamps = c.getLamps();
         assertThat(lamps.size(), is(2));
