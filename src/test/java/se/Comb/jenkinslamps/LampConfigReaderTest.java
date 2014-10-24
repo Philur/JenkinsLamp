@@ -65,4 +65,13 @@ public class LampConfigReaderTest {
             assertThat(actions.get(2).isOn(), is(true));
         }
     }
+	@Test
+    public void testRead2() throws Exception {
+        LampConfig c = LampConfigReader.read(getClass().getResourceAsStream("/config.xml"));
+        assertThat(c.getJenkinsUrl(), is(new URL("http://ec2-54-171-84-56.eu-west-1.compute.amazonaws.com/")));
+        assertThat(c.getPollTimeMsec(), is(10000));
+        assertThat(c.getTurnOnTime(), is(LocalTime.parse("08:00:00")));
+        assertThat(c.getTurnOffTime(), is(LocalTime.parse("17:00:00")));
+        assertThat(c.isActiveHolidays(), is(true));
+    }
 }
