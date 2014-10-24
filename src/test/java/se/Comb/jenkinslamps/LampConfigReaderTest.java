@@ -80,6 +80,5 @@ public class LampConfigReaderTest {
 
         List<Lamp> lamps = c.getLamps();
         assertThat(lamps.size(), is(2));
-        }
     }
 }
