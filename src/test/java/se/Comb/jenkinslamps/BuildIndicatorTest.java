@@ -17,10 +17,10 @@ public class BuildIndicatorTest {
     public void testTwoJobsWhenAllJobsOk() throws Exception {
         runTest(
                 true,
-                Arrays.asList("unit-test", "integration-test"),
+                Arrays.asList("Lava Lamp app for Jenkins", "TestBankAccount"),
                 new TreeMap<String, JobStatus>() {{
-                    put("unit-test", JobStatus.ok);
-                    put("integration-test", JobStatus.ok);
+                    put("Lava Lamp app for Jenkins", JobStatus.ok);
+                    put("TestBankAccount", JobStatus.ok);
                 }},
                 Arrays.asList(new Action(true, EventType.whenAllJobsOk))
         );
@@ -30,10 +30,10 @@ public class BuildIndicatorTest {
     public void testTwoJobsOkWhenAnyJobFails() throws Exception {
         runTest(
                 false,
-                Arrays.asList("unit-test", "integration-test"),
+                Arrays.asList("Lava Lamp app for Jenkins", "TestBankAccount"),
                 new TreeMap<String, JobStatus>() {{
-                    put("unit-test", JobStatus.ok);
-                    put("integration-test", JobStatus.ok);
+                    put("Lava Lamp app for Jenkins", JobStatus.ok);
+                    put("TestBankAccount", JobStatus.ok);
                 }},
                 Arrays.asList(new Action(true, EventType.whenAnyJobFails))
         );
@@ -43,10 +43,10 @@ public class BuildIndicatorTest {
     public void testTwoJobsOkFailedWhenAnyJobFails() throws Exception {
         runTest(
                 true,
-                Arrays.asList("unit-test", "integration-test"),
+                Arrays.asList("Lava Lamp app for Jenkins", "TestBankAccount"),
                 new TreeMap<String, JobStatus>() {{
-                    put("unit-test", JobStatus.ok);
-                    put("integration-test", JobStatus.failed);
+                    put("Lava Lamp app for Jenkins", JobStatus.ok);
+                    put("TestBankAccount", JobStatus.failed);
                 }},
                 Arrays.asList(new Action(true, EventType.whenAnyJobFails))
         );
@@ -56,10 +56,10 @@ public class BuildIndicatorTest {
     public void testTwoJobsOkWhenAnyJobUndefined() throws Exception {
         runTest(
                 false,
-                Arrays.asList("unit-test", "integration-test"),
+                Arrays.asList("Lava Lamp app for Jenkins", "TestBankAccount"),
                 new TreeMap<String, JobStatus>() {{
-                    put("unit-test", JobStatus.ok);
-                    put("integration-test", JobStatus.ok);
+                    put("Lava Lamp app for Jenkins", JobStatus.ok);
+                    put("TestBankAccount", JobStatus.ok);
                 }},
                 Arrays.asList(new Action(true, EventType.whenAnyJobUndefined))
         );
@@ -69,10 +69,10 @@ public class BuildIndicatorTest {
     public void testTwoJobsUnknownOkWhenAnyJobUndefined() throws Exception {
         runTest(
                 true,
-                Arrays.asList("unit-test", "integration-test"),
+                Arrays.asList("Lava Lamp app for Jenkins", "TestBankAccount"),
                 new TreeMap<String, JobStatus>() {{
-                    put("unit-test", JobStatus.unknown);
-                    put("integration-test", JobStatus.ok);
+                    put("Lava Lamp app for Jenkins", JobStatus.unknown);
+                    put("TestBankAccount", JobStatus.ok);
                 }},
                 Arrays.asList(new Action(true, EventType.whenAnyJobUndefined))
         );
