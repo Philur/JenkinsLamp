@@ -27,7 +27,7 @@ public class HolidayTest {
 		/*string dateNewYear = "2014-12-31";
 		assertThat("2014-12-31", is(dateNewYear));*/
 		assertThat("2014-12-31", is("2014-12-31"));
-		assertThat(NewYear.getDate(), is(rightNow);
+		assertThat(NewYear.getDate(), is(rightNow));
 		assertThat(NewYear.getName(), is("Newdate"));
     }
 
