@@ -22,10 +22,14 @@ public class HolidayTest {
     @Test
     public void testHolidayNewYear() throws Exception {
         
-		NewYear = new Holiday();
-		dateNewYear = "2014-12-31";
-		assertThat(NewYear.getName(), is(dateNewYear));
+		/*NewYear = new Holiday();*/
+		string dateNewYear = "2014-12-31";
+		assertThat("2014-12-31", is(dateNewYear));
     }
+
+
+
+
     public void testHolidayNewYearsDay() throws Exception {
         LampConfig c = LampConfigReader.read(getClass().getResourceAsStream("/config.xml"));
         assertThat(c.getJenkinsUrl(), is(new URL("http://ec2-54-171-84-56.eu-west-1.compute.amazonaws.com/api/xml/")));
