@@ -38,6 +38,7 @@ public class HolidayTest {
         
 		Calendar rightNow = Calendar.getInstance();
 		Holiday tempHoliday = new Holiday(rightNow, "HolidayName");
-		assertThat(tempHoliday.toString(), is("Holiday{date=" + rightNow.YEAR + "-" + rightNow.MONTH + "-" rightNow.DAY_OF_MONTH + ", name='HolidayName'}"));
+		assertThat(tempHoliday.toString(), is("Holiday{date=" + DateUtils.formatDateIso8601(rightNow) + ", name='HolidayName'}"));
+		/*assertThat(tempHoliday.toString(), is("Holiday{date=" + rightNow.YEAR + "-" + rightNow.MONTH + "-" rightNow.DAY_OF_MONTH + ", name='HolidayName'}"));*/
     }
 }
