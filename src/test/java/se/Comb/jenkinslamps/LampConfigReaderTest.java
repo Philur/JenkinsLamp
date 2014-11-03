@@ -48,7 +48,7 @@ public class LampConfigReaderTest {
         {
             Lamp lamp = lamps.get(1);
             assertThat(lamp.getName(), is("red"));
-            assertThat(lamp.getDescription(), is("Turn on red lamp when job TestBankAccount has failed<"));
+            assertThat(lamp.getDescription(), is("Turn on red lamp when job TestBankAccount has failed"));
             assertThat(lamp.getOnCommand(), is("tdtool --on 2"));
             assertThat(lamp.getOffCommand(), is("tdtool --off 2"));
             assertThat(lamp.getJobNames().size(), is(2));
