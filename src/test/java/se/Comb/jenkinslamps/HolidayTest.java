@@ -22,10 +22,13 @@ public class HolidayTest {
     @Test
     public void testHolidayNewYear() throws Exception {
         
-		Holiday NewYear = new Holiday(date.now(), "Newdate");
+		Calendar rightNow = Calendar.getInstance();
+		Holiday NewYear = new Holiday(rightNow, "Newdate");
 		/*string dateNewYear = "2014-12-31";
 		assertThat("2014-12-31", is(dateNewYear));*/
 		assertThat("2014-12-31", is("2014-12-31"));
+		assertThat(NewYear.getDate(), is(rightNow);
+		assertThat(NewYear.getName(), is("Newdate"));
     }
 
 
