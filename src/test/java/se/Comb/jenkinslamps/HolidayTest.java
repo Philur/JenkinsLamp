@@ -22,8 +22,8 @@ public class HolidayTest {
     @Test
     public void testHolidayNewYear() throws Exception {
         
-		/*NewYear = new Holiday();
-		string dateNewYear = "2014-12-31";
+		Holiday NewYear = new Holiday(2014-12-31, "Newdate");
+		/*string dateNewYear = "2014-12-31";
 		assertThat("2014-12-31", is(dateNewYear));*/
 		assertThat("2014-12-31", is("2014-12-31"));
     }
