@@ -22,8 +22,10 @@ public class JenkinsJobStatusFetcherTest {
     @Test
     public void JenkinsJobStatusFetcherTest_url() throws Exception {
         
-		JenkinsJobStatusFetcher tempFetcher = new JenkinsJobStatusFetcher(url(http://www.temp.com));
-		assertThat(tempFetcher(), is(url(http://www.temp.com)));
+		URL temp_url = new URL("http://www.temp.com");
+		JenkinsJobStatusFetcher tempFetcher = new JenkinsJobStatusFetcher(temp_url);
+		
+		assertThat(tempFetcher(), is(temp_url));
 		
 		
 		/*Calendar rightNow = Calendar.getInstance();
