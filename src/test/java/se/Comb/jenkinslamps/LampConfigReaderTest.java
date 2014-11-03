@@ -26,7 +26,7 @@ public class LampConfigReaderTest {
         assertThat(c.isActiveHolidays(), is(true));
 
         List<Lamp> lamps = c.getLamps();
-        assertThat(lamps.size(), is(2));
+        assertThat(lamps.size(), is(1));
         {
             Lamp lamp = lamps.get(0);
             assertThat(lamp.getName(), is("green"));
@@ -86,7 +86,7 @@ public class LampConfigReaderTest {
         LampConfig c = LampConfigReader.read(getClass().getResourceAsStream("/config.xml"));
 
         List<Lamp> lamps = c.getLamps();
-        assertThat(lamps.size(), is(2));
+        assertThat(lamps.size(), is(1));
         {
             Lamp lamp = lamps.get(0);
             assertThat(lamp.getName(), is("green"));
