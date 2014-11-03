@@ -22,7 +22,7 @@ public class HolidayTest {
     @Test
     public void testHolidayNewYear() throws Exception {
         
-		Holiday NewYear = new Holiday();
+		NewYear = new Holiday();
 		dateNewYear = "2014-12-31";
 		assertThat(NewYear.getName(), is(dateNewYear));
     }
