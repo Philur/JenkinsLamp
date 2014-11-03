@@ -51,7 +51,7 @@ public class LampConfigReaderTest {
             assertThat(lamp.getDescription(), is("Turn on red lamp when job TestBankAccount has failed"));
             assertThat(lamp.getOnCommand(), is("tdtool --on 2"));
             assertThat(lamp.getOffCommand(), is("tdtool --off 2"));
-            assertThat(lamp.getJobNames().size(), is(2));
+            assertThat(lamp.getJobNames().size(), is(1));
             assertThat(lamp.getJobNames().get(0), is("TestBankAccount"));
             //assertThat(lamp.getJobNames().get(1), is("unit-test2"));
 
@@ -111,7 +111,7 @@ public class LampConfigReaderTest {
             assertThat(lamp.getDescription(), is("Turn on red lamp when job TestBankAccount has failed"));
             assertThat(lamp.getOnCommand(), is("tdtool --on 2"));
             assertThat(lamp.getOffCommand(), is("tdtool --off 2"));
-            assertThat(lamp.getJobNames().size(), is(2));
+            assertThat(lamp.getJobNames().size(), is(1));
             assertThat(lamp.getJobNames().get(0), is("TestBankAccount"));
             //assertThat(lamp.getJobNames().get(1), is("unit-test2"));
 
