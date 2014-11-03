@@ -36,7 +36,7 @@ public class HolidayTest {
     @Test
     public void HolidayTest_toString() throws Exception {
         
-		Calendar rightNow = 2014-11-03;
+		Calendar rightNow = Calendar(2014-11-03);
 		Holiday tempHoliday = new Holiday(rightNow, "HolidayName");
 		assertThat(tempHoliday.toString(), is("Holiday{date=2014-11-03, name='HolidayName'}"));
     }
