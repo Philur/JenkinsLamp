@@ -22,7 +22,9 @@ public class JenkinsJobStatusFetcherTest {
     @Test
     public void JenkinsJobStatusFetcherTest_url() throws Exception {
         
+		/*
 		URL temp_url = new URL("http://www.temp.com");
+		*/
 		/*JenkinsJobStatusFetcher tempFetcher = new JenkinsJobStatusFetcher(temp_url());
 		
 		assertThat(tempFetcher(), is(""));*/
