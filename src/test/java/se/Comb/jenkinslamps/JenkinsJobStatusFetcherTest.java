@@ -18,6 +18,7 @@ import java.util.Map;
 /*
  * Created by u017121
  */
+/*
 public class JenkinsJobStatusFetcherTest {
     @Test
     public void JenkinsJobStatusFetcherTest_url() throws Exception {
@@ -35,3 +36,4 @@ public class JenkinsJobStatusFetcherTest {
 		assertThat(tempHoliday.getDate(), is(rightNow));*/
     }
 }
+*/
