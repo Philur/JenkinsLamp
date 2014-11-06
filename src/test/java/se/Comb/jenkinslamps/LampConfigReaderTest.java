@@ -82,6 +82,13 @@ public class LampConfigReaderTest {
         assertThat(lamps.size(), is(2));
     }
     @Test
+    public void testReadNoOflamps2() throws Exception {
+        LampConfig c = LampConfigReader.read(getClass().getResourceAsStream("/config.xml"));
+
+        List<Lamp> lamps = c.getLamps();
+        assertThat(lamps.size(), is(7)); //2
+    }
+    @Test
     public void testReadLamps() throws Exception {
         LampConfig c = LampConfigReader.read(getClass().getResourceAsStream("/config.xml"));
 
